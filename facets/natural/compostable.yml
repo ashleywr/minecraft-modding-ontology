@@ -1,0 +1,7 @@
+label: Compostable
+description: >
+  Items accepted by a composter. Usually paired with a more specific
+  natural facet; this facet acts as a secondary classification signal.
+
+matches:
+  tags: [minecraft:compostable_items, c:compostable, forge:compostable]

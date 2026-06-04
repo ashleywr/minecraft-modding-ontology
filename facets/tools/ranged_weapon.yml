@@ -1,0 +1,8 @@
+label: Ranged Weapon
+description: >
+  A weapon that attacks at a distance: bows, crossbows, guns, and similar.
+
+matches:
+  tags:       [c:bows, forge:bows, c:crossbows, forge:crossbows]
+  path_words: [bow, bows, crossbow, crossbows, gun, rifle, pistol, musket,
+               blunderbuss, revolver, shotgun]

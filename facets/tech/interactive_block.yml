@@ -1,0 +1,7 @@
+label: Interactive Block
+description: >
+  A placed block with a meaningful right-click interaction beyond simple
+  container access: GUI terminals, controllers, and config interfaces.
+
+matches:
+  path_words: [controller, interface, terminal, display, panel, console, monitor]

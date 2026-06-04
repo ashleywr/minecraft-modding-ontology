@@ -1,0 +1,9 @@
+label: Transport Vehicle
+description: >
+  An item that moves players, mobs, or cargo: mine carts, boats, and
+  multi-block vehicle components.
+
+matches:
+  path_words: [minecart, cart, carts, boat, boats, vehicle, locomotive,
+               wagon, gondola]
+  tags: [minecraft:boats]

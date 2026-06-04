@@ -1,0 +1,8 @@
+label: Seeds & Saplings
+description: Plantable seeds, crop seeds, and tree saplings.
+
+show_if_any:
+  - natural/seed
+  - natural/crop
+
+priority: high

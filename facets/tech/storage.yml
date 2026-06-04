@@ -1,0 +1,10 @@
+label: Storage
+description: >
+  A container block or item that holds other items: chests, barrels, bags,
+  crates, and inventory-providing objects.
+
+matches:
+  tags:       [c:chests, forge:chests, c:barrels, forge:barrels]
+  path_words: [chest, barrel, bag, crate, locker, vault, strongbox, depot,
+               warehouse]
+  components: [minecraft:container, minecraft:bundle_contents]

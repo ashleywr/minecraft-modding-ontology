@@ -1,0 +1,8 @@
+label: Door
+description: >
+  A full-height door block placed in two halves.
+
+matches:
+  tags:       [minecraft:doors, c:doors, forge:doors]
+  block_tags: [minecraft:doors]
+  path_words: [door, doors]

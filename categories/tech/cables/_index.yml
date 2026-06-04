@@ -1,0 +1,8 @@
+label: Cables & Pipes
+description: >
+  Energy, fluid, and item transport conduits: pipes, wires, tubes, ducts.
+
+show_if_any:
+  - tech/cable
+
+priority: high

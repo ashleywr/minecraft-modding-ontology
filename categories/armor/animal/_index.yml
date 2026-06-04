@@ -1,0 +1,7 @@
+label: Animal Armor
+description: Horse armor, saddles, barding, and equipment for animals.
+
+show_if_any:
+  - armor/animal
+
+priority: high

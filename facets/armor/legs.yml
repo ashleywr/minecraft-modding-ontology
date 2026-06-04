@@ -1,0 +1,7 @@
+label: Leg Armor
+description: >
+  Leggings or leg-slot armor.
+
+matches:
+  path_words: [leggings, pants, greaves, trousers]
+  tags: [c:armors/leggings, forge:armors/leggings]

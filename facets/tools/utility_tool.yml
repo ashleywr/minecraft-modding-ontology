@@ -1,0 +1,10 @@
+label: Utility Tool
+description: >
+  A handheld tool used for non-combat, non-harvesting tasks: wrenches,
+  hammers, fishing rods, and similar instruments.
+
+matches:
+  path_words: [wrench, hammer, mallet, brush, toolbox, fishing, rod]
+
+except_when:
+  path_words: [combat, sword, mace]

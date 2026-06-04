@@ -1,0 +1,8 @@
+label: Parts & Components
+description: >
+  Mechanical and tech crafting components: gears, shafts, plates, and belts.
+
+show_if_any:
+  - tech/mechanical_component
+
+priority: normal

@@ -1,0 +1,8 @@
+label: Equippable
+description: >
+  An item that occupies an equipment slot but is not a standard armor piece:
+  elytra, carved pumpkins worn as heads, and similar equippable items.
+
+matches:
+  path_words: [elytra]
+  components: [minecraft:equippable]

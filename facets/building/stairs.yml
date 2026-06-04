@@ -1,0 +1,8 @@
+label: Stairs
+description: >
+  A stair-shaped block for building stepped structures.
+
+matches:
+  tags:       [c:stairs, forge:stairs]
+  block_tags: [minecraft:stairs]
+  path_words: [stairs, stair]

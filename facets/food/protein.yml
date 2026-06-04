@@ -1,0 +1,7 @@
+label: Protein
+description: >
+  Raw or cooked animal protein: meats, fish, and similar food items.
+
+matches:
+  path_words: [beef, chicken, pork, porkchop, cod, salmon, rabbit, mutton, fish,
+               meat, bacon, ham, sausage, ribs, wing, wings, venison]

@@ -1,0 +1,10 @@
+label: Utility Miscellaneous
+description: >
+  A general-purpose utility item that does not fit a more specific utility
+  category: containers, bottles, pouches, and similar items.
+
+matches:
+  path_words: [pouch, satchel, dish, flask]
+
+except_when:
+  has_facet: [food/edible, magic/potion]

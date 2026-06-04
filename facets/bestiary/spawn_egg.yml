@@ -1,0 +1,9 @@
+label: Spawn Egg
+description: >
+  An item that spawns an entity when used on a surface. Tools should
+  detect this via the SpawnEggItem class or equivalent; the spawn + egg
+  token pattern serves as a fallback.
+
+matches:
+  path_words: [spawn, egg]
+  tags: [c:spawn_eggs, forge:spawn_eggs]

@@ -1,0 +1,11 @@
+label: Worn Armor
+description: Helmets, chestplates, leggings, boots, and other player-worn protection.
+
+show_if_any:
+  - armor/head
+  - armor/chest
+  - armor/legs
+  - armor/feet
+  - armor/equippable
+
+priority: high

@@ -1,0 +1,10 @@
+label: Machine
+description: >
+  A block that performs automated processing or transformation: generators,
+  crushers, mixers, and similar devices that accept input and produce output.
+
+matches:
+  path_words: [machine, generator, crusher, mixer, press, millstone, pump,
+               engine, motor, charger, accumulator, crafter, assembler,
+               fabricator, refinery, compressor, chamber, stove]
+  creative_tab: [machine, tech, mechanism, engineering]

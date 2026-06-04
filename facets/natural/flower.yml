@@ -1,0 +1,8 @@
+label: Flower
+description: >
+  Flowering plants: vanilla and modded flowers, blossoms, and similar flora.
+
+matches:
+  tags:       [minecraft:flowers, c:flowers, forge:flowers]
+  block_tags: [minecraft:flowers, minecraft:small_flowers, minecraft:tall_flowers]
+  path_words: [flower, flowers, blossom, blossoms, petal, petals]

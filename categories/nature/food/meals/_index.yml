@@ -1,0 +1,9 @@
+label: Meals & Dishes
+description: >
+  Prepared composite dishes: soups, stews, sandwiches, and plated foods.
+
+show_if_any:
+  - food/meal
+  - food/placeable_food
+
+priority: high

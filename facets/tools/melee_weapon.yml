@@ -1,0 +1,9 @@
+label: Melee Weapon
+description: >
+  A hand-held weapon used in close-range combat: swords, daggers, spears,
+  and similar instruments.
+
+matches:
+  tags:       [c:melee_weapons, forge:melee_weapons, c:swords, forge:swords]
+  path_words: [sword, swords, dagger, daggers, spear, spears, mace, club,
+               katana, sabre, scimitar, rapier, blade]

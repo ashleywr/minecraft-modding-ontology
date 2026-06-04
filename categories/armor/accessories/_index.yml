@@ -1,0 +1,7 @@
+label: Accessories
+description: Curios, rings, amulets, and other accessory-slot items.
+
+show_if_any:
+  - armor/curio
+
+priority: high

@@ -1,0 +1,9 @@
+label: Curio
+description: >
+  An accessory worn in a Curios API slot (ring, amulet, belt, etc.). Only
+  items that use actual Curios API slots should receive this facet; items
+  that happen to use "curio" in their name do not qualify automatically.
+
+matches:
+  tags: [curios:ring, curios:amulet, curios:belt, curios:charm, curios:back,
+         curios:head, curios:hands, curios:necklace]

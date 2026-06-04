@@ -1,0 +1,8 @@
+label: Transport
+description: Rails, tracks, vehicles, and infrastructure for moving players or cargo.
+
+show_if_any:
+  - transport/rail
+  - transport/transport
+
+priority: high

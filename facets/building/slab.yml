@@ -1,0 +1,8 @@
+label: Slab
+description: >
+  A half-height slab block.
+
+matches:
+  tags:       [c:slabs, forge:slabs]
+  block_tags: [minecraft:slabs]
+  path_words: [slab, slabs]

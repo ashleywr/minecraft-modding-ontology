@@ -1,0 +1,8 @@
+label: Snacks & Sweets
+description: >
+  Simple edible items: breads, cakes, candies, fruits, and raw crops.
+
+show_if_any:
+  - food/edible
+
+priority: low

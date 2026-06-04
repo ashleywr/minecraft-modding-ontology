@@ -30,12 +30,12 @@ warnings = []
 
 
 def load_schema(name):
-    with open(SCHEMA_DIR / name) as f:
+    with open(SCHEMA_DIR / name, encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_yaml(path):
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 

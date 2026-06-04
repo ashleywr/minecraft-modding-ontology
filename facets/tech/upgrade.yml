@@ -1,0 +1,8 @@
+label: Upgrade
+description: >
+  An item that modifies or improves a machine or tool when installed into
+  an upgrade slot.
+
+matches:
+  path_words: [upgrade, upgrades, augment, augments]
+  tags: [c:upgrades, forge:upgrades]

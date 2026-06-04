@@ -1,0 +1,11 @@
+label: Decorative Block
+description: >
+  A block placed primarily for its visual appearance rather than functional
+  purpose: furniture, display blocks, and decorative structures.
+
+matches:
+  creative_tab: [furniture, decor, deco, decoration]
+  path_words: [chair, table, desk, couch, sofa, bench, stool, cabinet,
+               cabinetry, shelf, rack, counter, nightstand, wardrobe, dresser,
+               bookcase, postbox, toilet, curtain, rug, pillow, cushion,
+               blanket, tapestry]

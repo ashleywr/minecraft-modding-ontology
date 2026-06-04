@@ -1,0 +1,12 @@
+label: Dust
+description: >
+  A powdered or ground material used in tech mod recipes: metal dusts,
+  powders, and similar fine-grained crafting materials.
+
+matches:
+  tags: [c:dusts, forge:dusts, c:powders, forge:powders]
+  path_words: [dust, dusts, powder, powders]
+
+except_when:
+  path_words: [gunpowder, sand, soul]
+  # gunpowder is already well-categorized; soul sand is terrain

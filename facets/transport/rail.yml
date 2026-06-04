@@ -1,0 +1,10 @@
+label: Rail
+description: >
+  A track or rail segment placed to guide rail vehicles. Includes vanilla
+  rails and modded track types.
+
+matches:
+  tags:       [minecraft:rails, create:tracks]
+  block_tags: [minecraft:rails, create:tracks]
+  path_words: [rail, rails, track, tracks, monorail, tram, coupler, semaphore,
+               handcar]

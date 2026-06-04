@@ -1,0 +1,8 @@
+label: Enchanted Book
+description: >
+  A book containing an enchantment that can be applied via an anvil.
+
+matches:
+  components: [minecraft:stored_enchantments]
+  path_words: [enchanted, book]
+  tags: [c:enchanted_books, forge:enchanted_books]

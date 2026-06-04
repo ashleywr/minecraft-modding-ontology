@@ -1,0 +1,8 @@
+label: Mechanical Component
+description: >
+  A kinetic or structural mechanical part: gears, shafts, belts, flywheels.
+  Common in Create and similar mods.
+
+matches:
+  path_words: [gear, gears, gearbox, cog, cogs, cogwheel, cogwheels, shaft,
+               shafts, belt, belts, flywheel]

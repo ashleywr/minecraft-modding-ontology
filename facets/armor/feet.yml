@@ -1,0 +1,7 @@
+label: Foot Armor
+description: >
+  Boots or foot-slot armor.
+
+matches:
+  path_words: [boots, boot, shoes, sandals, greaves]
+  tags: [c:armors/boots, forge:armors/boots]

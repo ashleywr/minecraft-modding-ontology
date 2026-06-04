@@ -1,0 +1,7 @@
+label: Ammo & Projectiles
+description: Arrows, bolts, bullets, shells, and other fired or thrown projectiles.
+
+show_if_any:
+  - tools/projectile
+
+priority: high

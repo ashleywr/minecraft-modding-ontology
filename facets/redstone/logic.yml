@@ -1,0 +1,9 @@
+label: Redstone Logic Block
+description: >
+  Any block that participates in redstone circuits, including both active
+  logic blocks and passive signal sources.
+
+matches:
+  path_words: [redstone, repeater, comparator, observer, piston, sensor,
+               detector, lever, target, pressure]
+  tags: [minecraft:pressure_plates]

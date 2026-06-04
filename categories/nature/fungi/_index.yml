@@ -1,0 +1,7 @@
+label: Fungi
+description: Mushrooms, fungal growths, mycelium, and nylium.
+
+show_if_any:
+  - natural/fungi
+
+priority: high

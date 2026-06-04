@@ -1,0 +1,8 @@
+label: Soil Block
+description: >
+  A dirt, earth, sand, gravel, or similar loose terrain material.
+
+matches:
+  tags:       [c:dirt, forge:dirt, c:sand, forge:sand, c:gravel, forge:gravel]
+  block_tags: [minecraft:dirt, minecraft:sand]
+  path_words: [dirt, soil, clay, sand, gravel, mud, peat, silt, loam, permafrost]

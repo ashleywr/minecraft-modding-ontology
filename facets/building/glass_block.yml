@@ -1,0 +1,8 @@
+label: Glass Block
+description: >
+  A glass block, pane, or transparent decorative block.
+
+matches:
+  tags:       [c:glass_blocks, forge:glass, c:glass, forge:glass_blocks]
+  block_tags: [c:glass_blocks, forge:glass]
+  path_words: [glass]

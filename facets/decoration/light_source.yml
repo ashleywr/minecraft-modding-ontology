@@ -1,0 +1,9 @@
+label: Light Source
+description: >
+  A block that emits light. Use alongside a primary lighting word to
+  distinguish decorative light fixtures from incidental light emitters
+  (glowing ores, etc.).
+
+matches:
+  path_words: [lamp, lantern, chandelier, sconce, brazier, candelabra, candle,
+               torch, beacon]

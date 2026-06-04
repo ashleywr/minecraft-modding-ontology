@@ -1,0 +1,9 @@
+label: Mineral Ingredient
+description: >
+  A crafting ingredient of mineral or geological origin that is not a
+  standard ingot, gem, nugget, or raw material: flint, clay, shards,
+  quartz, and similar materials.
+
+matches:
+  path_words: [flint, clay, shard, shards, prismarine, pottery, sherd, quartz,
+               salt, salts, rock]

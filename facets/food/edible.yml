@@ -1,0 +1,7 @@
+label: Edible
+description: >
+  The item can be consumed by a player. Carries the minecraft:food data
+  component or equivalent.
+
+matches:
+  components: [minecraft:food]

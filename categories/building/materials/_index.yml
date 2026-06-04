@@ -1,0 +1,12 @@
+label: Materials
+description: >
+  Full building blocks: stone, soil, glass, and generic placeable blocks
+  that do not fit a more specific building subcategory.
+
+show_if_any:
+  - building/stone_block
+  - building/soil_block
+  - building/glass_block
+  - building/placeable
+
+priority: low

@@ -1,0 +1,8 @@
+label: Trapdoor
+description: >
+  A single-block hinged panel door for floors and ceilings.
+
+matches:
+  tags:       [minecraft:trapdoors, c:trapdoors, forge:trapdoors]
+  block_tags: [minecraft:trapdoors]
+  path_words: [trapdoor, trapdoors]

@@ -1,0 +1,10 @@
+label: Redstone
+description: Redstone logic blocks, signal sources, and automation components.
+
+show_if_any:
+  - redstone/active_logic
+  - redstone/logic
+  - redstone/signal
+  - redstone/passive_output
+
+priority: high

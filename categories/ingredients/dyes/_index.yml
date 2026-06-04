@@ -1,0 +1,7 @@
+label: Dyes & Pigments
+description: Coloring ingredients used to dye blocks, items, or entities.
+
+show_if_any:
+  - ingredients/dye
+
+priority: high

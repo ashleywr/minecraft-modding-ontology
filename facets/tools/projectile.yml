@@ -1,0 +1,10 @@
+label: Projectile
+description: >
+  An item fired or thrown as ammunition: arrows, bolts, bullets, shells.
+  Context signals (ammo tokens, weapon tags) help distinguish shell
+  casings from natural shells.
+
+matches:
+  tags:       [minecraft:arrows, c:arrows, forge:arrows]
+  path_words: [arrow, arrows, bolt, bolts, bullet, bullets, round, rounds,
+               cartridge, cartridges, grenade, rocket]

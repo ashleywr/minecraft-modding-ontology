@@ -1,0 +1,13 @@
+label: Meal
+description: >
+  A prepared composite dish: soups, stews, sandwiches, and other
+  multi-ingredient cooked foods.
+
+matches:
+  path_words: [soup, stew, sandwich, burger, cheeseburger, pizza, pasta, noodle,
+               noodles, kebab, salad, dumpling, dumplings, casserole, lasagna,
+               quiche, meatball, meatballs, taco, tacos, wrap, wraps, burrito,
+               burritos, meal]
+
+except_when:
+  path_words: [table, tables]

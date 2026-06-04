@@ -1,0 +1,9 @@
+label: Has Energy
+description: >
+  A block or item that stores, generates, or consumes energy (FE, RF, EU,
+  or equivalent). Tools implementing this facet should check for energy
+  storage capability via their loader's energy API.
+
+matches:
+  path_words: [battery, capacitor, accumulator]
+  tags: [c:energy_storages, forge:energy_storages]

@@ -1,0 +1,7 @@
+label: Circuits
+description: Circuit boards, processors, chips, and similar electronic components.
+
+show_if_any:
+  - tech/tech_component
+
+priority: high

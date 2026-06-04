@@ -1,0 +1,11 @@
+label: Harvest Tool
+description: >
+  A tool designed for gathering resources: pickaxes, shovels, axes, hoes,
+  sickles, and shears.
+
+matches:
+  tags:       [c:tools/pickaxes, forge:tools/pickaxes, c:tools/shovels,
+               forge:tools/shovels, c:tools/axes, forge:tools/axes,
+               c:tools/hoes, forge:tools/hoes, c:shears, forge:shears]
+  path_words: [pickaxe, pickaxes, shovel, shovels, axe, axes, hoe, hoes,
+               sickle, scythe, shears]

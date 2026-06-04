@@ -1,0 +1,7 @@
+label: Potions
+description: Drinkable and throwable potions with magical effects.
+
+show_if_any:
+  - magic/potion
+
+priority: high

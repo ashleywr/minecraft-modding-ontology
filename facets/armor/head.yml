@@ -1,0 +1,7 @@
+label: Head Armor
+description: >
+  A helmet or head-slot armor piece.
+
+matches:
+  path_words: [helmet, helmets, cap, hood]
+  tags: [c:armors/helmet, forge:armors/helmet]

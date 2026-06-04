@@ -1,0 +1,8 @@
+label: Animal Armor
+description: >
+  Armor, barding, or equipment worn by animals: horse armor, saddles, and
+  similar entity equipment.
+
+matches:
+  path_words: [horse, barding, harness, saddle]
+  tags: [minecraft:horse_armor, c:animal_armor, forge:animal_armor]

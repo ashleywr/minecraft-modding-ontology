@@ -1,0 +1,6 @@
+label: Fungi
+description: >
+  Mushrooms, fungal growths, mycelium, and nylium blocks.
+
+matches:
+  path_words: [mushroom, mushrooms, fungus, fungi, mycelium, nylium]

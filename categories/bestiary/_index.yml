@@ -1,0 +1,8 @@
+label: Bestiary
+description: Spawn eggs, mob buckets, and entity-related items.
+
+show_if_any:
+  - bestiary/spawn_egg
+  - bestiary/mob_bucket
+
+priority: high

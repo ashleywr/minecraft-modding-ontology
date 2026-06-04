@@ -1,0 +1,8 @@
+label: Wood
+description: Logs, planks, stripped variants, and other wood-derived blocks.
+
+show_if_any:
+  - natural/log
+  - natural/wood_block
+
+priority: normal

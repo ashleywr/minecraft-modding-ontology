@@ -1,0 +1,5 @@
+label: Placeable
+description: >
+  The item places a block when used on a surface. This facet is present on
+  almost all block items. Tools should detect this via BlockItem class
+  inspection rather than path words.

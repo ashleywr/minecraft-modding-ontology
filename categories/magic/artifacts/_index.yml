@@ -1,0 +1,7 @@
+label: Artifacts
+description: Wands, staves, scrolls, totems, and actively-used magical items.
+
+show_if_any:
+  - magic/artifact
+
+priority: normal

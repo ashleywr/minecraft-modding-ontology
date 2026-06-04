@@ -1,0 +1,7 @@
+label: Melee Weapons
+description: Swords, daggers, spears, and close-range combat weapons.
+
+show_if_any:
+  - tools/melee_weapon
+
+priority: high

@@ -1,0 +1,8 @@
+label: Has Block Entity
+description: >
+  A block with an associated block entity (tile entity), indicating it stores
+  persistent state such as inventory, energy, or processing progress. Tools
+  should detect this via the block entity registry, not path words.
+
+matches:
+  components: [minecraft:block_entity_data]

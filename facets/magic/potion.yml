@@ -1,0 +1,8 @@
+label: Potion
+description: >
+  A drinkable or throwable liquid with a magical effect, carrying
+  potion_contents or equivalent effect data.
+
+matches:
+  components: [minecraft:potion_contents]
+  path_words: [potion, potions, elixir, elixirs, tincture, philter]

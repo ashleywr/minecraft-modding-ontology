@@ -1,0 +1,8 @@
+label: Redstone Signal Source
+description: >
+  A block that produces a redstone signal as a side effect of its primary
+  function: pressure plates, tripwires, and daylight detectors.
+
+matches:
+  tags:       [minecraft:pressure_plates]
+  path_words: [detector, tripwire, daylight]

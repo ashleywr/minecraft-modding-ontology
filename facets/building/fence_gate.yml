@@ -1,0 +1,8 @@
+label: Fence Gate
+description: >
+  A gate block placed at a fence opening.
+
+matches:
+  tags:       [minecraft:fence_gates, c:fence_gates, forge:fence_gates]
+  block_tags: [minecraft:fence_gates]
+  path_words: [gate]

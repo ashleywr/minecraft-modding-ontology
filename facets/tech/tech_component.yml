@@ -1,0 +1,11 @@
+label: Tech Component
+description: >
+  A circuit board, processor, or chip used as a crafting intermediate in
+  tech mod recipes.
+
+matches:
+  path_words: [circuit, circuits, processor, chip, chipset, logic, calculation,
+               engineering]
+
+except_when:
+  path_words: [bowl, plate, bottle, milkshake]

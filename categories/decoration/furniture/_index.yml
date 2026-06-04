@@ -1,0 +1,7 @@
+label: Furniture
+description: Tables, chairs, shelves, cabinets, and other decorative furnishings.
+
+show_if_any:
+  - decoration/decorative_block
+
+priority: normal

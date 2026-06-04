@@ -1,0 +1,7 @@
+label: Nugget
+description: >
+  A small unit of metal material, typically nine of which craft one ingot.
+
+matches:
+  tags: [c:nuggets, forge:nuggets]
+  path_words: [nugget, nuggets]

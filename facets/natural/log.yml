@@ -1,0 +1,8 @@
+label: Log
+description: >
+  A tree log or wood stem block, including stripped variants.
+
+matches:
+  tags:       [minecraft:logs, c:logs, forge:logs]
+  block_tags: [minecraft:logs]
+  path_words: [log, logs, stem, stems, hyphae]

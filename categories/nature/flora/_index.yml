@@ -1,0 +1,12 @@
+label: Flora
+description: >
+  Flowers, leaves, mosses, vines, and other decorative or functional
+  plant blocks and items.
+
+show_if_any:
+  - natural/flower
+  - natural/leaves
+  - natural/nature_misc
+  - natural/compostable
+
+priority: normal

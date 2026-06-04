@@ -1,0 +1,9 @@
+label: Workstation
+description: >
+  A crafting or processing station operated by the player. Requires direct
+  interaction rather than automation.
+
+matches:
+  path_words: [workbench, anvil, furnace, kiln, forge, crucible, cauldron,
+               loom, cartography, stonecutter, grindstone, smithing]
+  tags: [c:workstations, forge:workstations]

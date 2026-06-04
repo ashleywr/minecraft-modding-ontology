@@ -1,0 +1,9 @@
+label: Template
+description: >
+  A reusable design template, schematic, or blueprint used to define or
+  replicate crafted structures or items.
+
+matches:
+  path_words: [blueprint, schematic, template, mold]
+  tags: [silentgear:blueprints, c:blueprint, c:templates, forge:templates]
+  creative_tab: [blueprint, template, schematic]

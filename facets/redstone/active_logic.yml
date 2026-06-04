@@ -1,0 +1,9 @@
+label: Active Redstone Logic
+description: >
+  A block that actively drives or transforms a redstone signal based on
+  its state: repeaters, comparators, observers, and logic gates.
+
+matches:
+  path_words: [repeater, comparator, observer, logic, gate, sequencer, relay,
+               transmitter, receiver]
+  tags: [minecraft:buttons]

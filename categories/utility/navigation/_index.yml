@@ -1,0 +1,7 @@
+label: Navigation
+description: Compasses, maps, spyglasses, and position-tracking tools.
+
+show_if_any:
+  - utility/navigation
+
+priority: high

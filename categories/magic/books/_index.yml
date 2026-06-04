@@ -1,0 +1,7 @@
+label: Enchanted Books
+description: Books containing enchantments applicable via an anvil.
+
+show_if_any:
+  - magic/enchanted_book
+
+priority: high

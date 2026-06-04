@@ -1,0 +1,13 @@
+label: Seed
+description: >
+  A plantable seed, crop seed, or sapling. Does not include seed pouches,
+  seed oil presses, or technical items that use "seed" in their name for
+  unrelated reasons.
+
+matches:
+  tags:       [c:seeds, forge:seeds, minecraft:saplings]
+  block_tags: [minecraft:saplings]
+  path_words: [seed, seeds, sapling, saplings]
+
+except_when:
+  path_words: [pouch, bucket, oil, crystal, machine, maker]

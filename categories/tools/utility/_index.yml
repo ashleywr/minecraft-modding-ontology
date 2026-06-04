@@ -1,0 +1,7 @@
+label: Utility Tools
+description: Wrenches, hammers, fishing rods, brushes, and other functional handheld tools.
+
+show_if_any:
+  - tools/utility_tool
+
+priority: normal

@@ -1,0 +1,11 @@
+label: Raw Material
+description: >
+  An unprocessed ore drop or raw mineral requiring smelting or further
+  processing before use in recipes.
+
+matches:
+  tags: [c:raw_materials, forge:raw_materials]
+  path_words: [raw, ore, ores]
+
+except_when:
+  path_words: [block, blocks, deepslate, nether]

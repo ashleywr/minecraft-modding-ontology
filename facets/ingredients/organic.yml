@@ -1,0 +1,10 @@
+label: Organic Ingredient
+description: >
+  A crafting ingredient of biological origin: feathers, bones, leather,
+  wool, honeycomb, and similar mob drops or biological materials.
+
+matches:
+  tags: [c:feathers, forge:feathers, c:bones, forge:bones, c:leathers,
+         forge:leathers, c:wool, forge:wool]
+  path_words: [string, feather, feathers, bone, bones, leather, hide, scute,
+               honeycomb, wool, crumb, crumbs, scale, scales, sprig, thread]

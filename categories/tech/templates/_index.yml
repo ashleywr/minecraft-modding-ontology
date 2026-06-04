@@ -1,0 +1,7 @@
+label: Templates & Blueprints
+description: Reusable design templates, schematics, and blueprints.
+
+show_if_any:
+  - tech/template
+
+priority: high

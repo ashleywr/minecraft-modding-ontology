@@ -1,0 +1,9 @@
+label: Cable
+description: >
+  An energy, fluid, or item transport conduit: pipes, wires, tubes, ducts.
+
+matches:
+  path_words: [cable, cables, wire, wires, pipe, pipes, tube, tubes, duct, conduit]
+
+except_when:
+  path_words: [coral, cobweb, bush, leaf, leaves, roots]

@@ -1,0 +1,8 @@
+label: Navigation
+description: >
+  An item used for locating or tracking positions in the world: compasses,
+  maps, spyglasses, and clocks.
+
+matches:
+  path_words: [compass, map, maps, spyglass, clock]
+  tags: [minecraft:compasses]

@@ -1,0 +1,5 @@
+label: Passive Comparator Output
+description: >
+  A block whose fill level or state can be read by a comparator but does
+  not actively drive signals. Detection requires tool-level inspection of
+  block entity state; there are no reliable general-purpose path signals.

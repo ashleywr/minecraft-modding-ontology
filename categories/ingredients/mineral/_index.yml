@@ -1,0 +1,14 @@
+label: Mineral Materials
+description: >
+  Ingots, gems, nuggets, raw materials, dusts, and other mineral crafting
+  ingredients.
+
+show_if_any:
+  - ingredients/ingot
+  - ingredients/gem
+  - ingredients/nugget
+  - ingredients/raw_material
+  - ingredients/dust
+  - ingredients/mineral
+
+priority: normal

@@ -1,0 +1,10 @@
+label: Wood Block
+description: >
+  A processed wood product: planks, boards, or other shaped wood blocks.
+
+matches:
+  tags:       [minecraft:planks, c:planks, forge:planks]
+  path_words: [planks, boards]
+
+requires:
+  has_facet: [building/placeable]

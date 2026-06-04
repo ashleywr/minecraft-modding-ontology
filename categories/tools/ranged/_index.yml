@@ -1,0 +1,7 @@
+label: Ranged Weapons
+description: Bows, crossbows, guns, and other distance weapons.
+
+show_if_any:
+  - tools/ranged_weapon
+
+priority: high

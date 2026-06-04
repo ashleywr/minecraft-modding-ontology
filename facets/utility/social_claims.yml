@@ -1,0 +1,7 @@
+label: Social (Claims)
+description: >
+  An item related to land claiming, territory ownership, or server
+  administrative functions: claim blocks, territory markers.
+
+matches:
+  path_words: [claim, claims, territory, deed, ownership]

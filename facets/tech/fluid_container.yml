@@ -1,0 +1,11 @@
+label: Fluid Container
+description: >
+  An item that holds or transfers fluid: buckets, tanks, fluid cells, and
+  portable fluid carriers. Does not include mob buckets.
+
+matches:
+  tags:       [c:buckets, forge:buckets]
+  path_words: [canteen, drum]
+
+except_when:
+  has_facet: [bestiary/mob_bucket]

@@ -1,0 +1,8 @@
+label: Medical
+description: >
+  A first-aid or medical supply item used to restore health or treat
+  status effects outside of food.
+
+matches:
+  path_words: [bandage, medkit, syringe, morphine, adrenaline, splint,
+               tourniquet]

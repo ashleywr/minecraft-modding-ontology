@@ -1,0 +1,7 @@
+label: Lighting
+description: Lamps, lanterns, candles, torches, and dedicated light fixtures.
+
+show_if_any:
+  - decoration/light_source
+
+priority: high

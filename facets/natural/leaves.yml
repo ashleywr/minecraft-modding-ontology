@@ -1,0 +1,8 @@
+label: Leaves
+description: >
+  Tree leaf blocks or foliage canopy blocks.
+
+matches:
+  tags:       [minecraft:leaves, c:leaves, forge:leaves]
+  block_tags: [minecraft:leaves]
+  path_words: [leaves]

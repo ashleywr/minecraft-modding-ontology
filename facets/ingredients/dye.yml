@@ -1,0 +1,7 @@
+label: Dye
+description: >
+  A coloring ingredient used to dye blocks, items, or entities.
+
+matches:
+  tags: [c:dyes, forge:dyes, minecraft:dyes]
+  path_words: [dye, dyes, pigment, pigments, ink]

@@ -1,0 +1,7 @@
+label: Reagents
+description: Runes, essences, and other materials used in magical crafting and rituals.
+
+show_if_any:
+  - magic/reagent
+
+priority: normal

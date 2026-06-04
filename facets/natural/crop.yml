@@ -1,0 +1,9 @@
+label: Crop
+description: >
+  A harvestable plant produce item from vanilla or modded agriculture.
+  Includes raw crop drops and items representing harvested plant matter.
+
+matches:
+  tags:       [c:crops, forge:crops]
+  path_words: [crop, crops, wheat, carrot, potato, beetroot, tomato, cabbage,
+               onion, pepper, cucumber, grape, berry, berries, rice]

@@ -1,0 +1,14 @@
+label: Machines
+description: >
+  Blocks that perform automated processing, generation, or transformation.
+  Includes storage blocks and interactive tech interfaces.
+
+show_if_any:
+  - tech/machine
+  - tech/workstation
+  - tech/has_energy
+  - tech/interactive_block
+  - tech/storage
+  - tech/has_block_entity
+
+priority: normal

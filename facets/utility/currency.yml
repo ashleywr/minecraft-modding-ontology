@@ -1,0 +1,7 @@
+label: Currency
+description: >
+  An item used as in-game currency: coins, tokens, and similar exchange
+  items.
+
+matches:
+  path_words: [coin, coins, cash, money, token, tokens, credit, credits]

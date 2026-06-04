@@ -1,0 +1,7 @@
+label: Currency
+description: Coins, tokens, and in-game exchange items.
+
+show_if_any:
+  - utility/currency
+
+priority: high

@@ -1,0 +1,8 @@
+label: Drinks
+description: >
+  Drinkable beverages: juices, beers, teas, coffees, and smoothies.
+
+show_if_any:
+  - food/drink
+
+priority: high

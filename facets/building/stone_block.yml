@@ -1,0 +1,11 @@
+label: Stone Block
+description: >
+  A block made primarily of stone, cobblestone, or processed stone material.
+
+matches:
+  tags:       [c:stones, forge:stones, c:cobblestones, forge:cobblestones,
+               minecraft:stone_bricks, c:sandstones, forge:sandstones]
+  block_tags: [minecraft:stone_bricks, minecraft:base_stone_overworld]
+  path_words: [stone, cobblestone, cobblestones, granite, diorite, andesite,
+               basalt, calcite, tuff, deepslate, sandstone, netherrack,
+               blackstone, obsidian]

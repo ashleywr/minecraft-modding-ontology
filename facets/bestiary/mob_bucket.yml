@@ -1,0 +1,13 @@
+label: Mob Bucket
+description: >
+  A bucket containing a captured living entity: fish buckets, axolotl
+  buckets, tadpole buckets, and modded equivalents.
+
+matches:
+  components: [minecraft:bucket_entity_data]
+  path_words: [bucket]
+
+requires:
+  any:
+    - path_words: [fish, salmon, cod, pufferfish, axolotl, tadpole, mob]
+    - components: [minecraft:bucket_entity_data]

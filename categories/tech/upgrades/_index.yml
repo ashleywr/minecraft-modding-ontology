@@ -1,0 +1,7 @@
+label: Upgrades
+description: Machine and tool upgrade modules installed into upgrade slots.
+
+show_if_any:
+  - tech/upgrade
+
+priority: high

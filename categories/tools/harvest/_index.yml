@@ -1,0 +1,7 @@
+label: Harvest Tools
+description: Pickaxes, shovels, axes, hoes, sickles, and shears.
+
+show_if_any:
+  - tools/harvest_tool
+
+priority: high

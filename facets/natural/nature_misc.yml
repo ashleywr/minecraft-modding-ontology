@@ -1,0 +1,8 @@
+label: Nature Miscellaneous
+description: >
+  Organic natural items that do not fit a more specific natural category:
+  plant matter, overgrowth, and miscellaneous vegetation.
+
+matches:
+  path_words: [bush, shrub, sprouts, roots, vine, vines, moss, coral, seagrass,
+               kelp, cactus, fern, clover, trellis]

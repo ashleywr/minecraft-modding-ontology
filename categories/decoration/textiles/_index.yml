@@ -1,0 +1,7 @@
+label: Textiles
+description: Rugs, curtains, banners, tapestries, and fabric decorations.
+
+show_if_any:
+  - decoration/decorative_block
+
+priority: normal

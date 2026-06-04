@@ -1,0 +1,8 @@
+label: Proteins
+description: >
+  Raw and cooked animal proteins: meats, fish, and similar foods.
+
+show_if_any:
+  - food/protein
+
+priority: high

@@ -1,0 +1,11 @@
+label: Fence
+description: >
+  A fence block that connects to adjacent blocks and entities cannot pass.
+
+matches:
+  tags:       [minecraft:fences, c:fences, forge:fences]
+  block_tags: [minecraft:fences]
+  path_words: [fence, fences]
+
+except_when:
+  has_facet: [building/fence_gate]

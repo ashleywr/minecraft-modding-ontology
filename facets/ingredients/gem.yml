@@ -1,0 +1,9 @@
+label: Gem
+description: >
+  A cut or raw precious gem used as a crafting material: diamonds, emeralds,
+  rubies, and similar stones.
+
+matches:
+  tags: [c:gems, forge:gems]
+  path_words: [gem, gems, diamond, emerald, ruby, sapphire, topaz, amethyst,
+               peridot, opal, jasper, garnet]

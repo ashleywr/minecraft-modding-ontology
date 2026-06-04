@@ -1,0 +1,9 @@
+label: Pane
+description: >
+  A thin transparent pane block: glass panes, iron bars, and similar
+  thin-profile blocks.
+
+matches:
+  tags:       [c:glass_panes, forge:glass_panes]
+  block_tags: [c:glass_panes, forge:glass_panes]
+  path_words: [pane, panes, bars]

@@ -1,0 +1,8 @@
+label: Wall
+description: >
+  A wall-shaped block that connects to adjacent blocks.
+
+matches:
+  tags:       [minecraft:walls, c:walls, forge:walls]
+  block_tags: [minecraft:walls]
+  path_words: [wall, walls]

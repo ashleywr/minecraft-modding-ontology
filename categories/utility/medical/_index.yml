@@ -1,0 +1,7 @@
+label: Medical Supplies
+description: Bandages, medkits, syringes, and first-aid items.
+
+show_if_any:
+  - utility/medical
+
+priority: high

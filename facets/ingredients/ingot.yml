@@ -1,0 +1,7 @@
+label: Ingot
+description: >
+  A smelted or cast metal ingot used as a crafting material.
+
+matches:
+  tags: [c:ingots, forge:ingots]
+  path_words: [ingot, ingots]

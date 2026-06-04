@@ -1,0 +1,9 @@
+label: Functional Blocks
+description: Doors, trapdoors, and fence gates.
+
+show_if_any:
+  - building/door
+  - building/trapdoor
+  - building/fence_gate
+
+priority: high

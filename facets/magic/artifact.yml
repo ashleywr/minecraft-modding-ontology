@@ -1,0 +1,9 @@
+label: Magic Artifact
+description: >
+  A magical item used actively: wands, staves, scrolls, totems, and
+  similar objects with magical function.
+
+matches:
+  path_words: [spell, wand, staff, scroll, totem, charm, relic, talisman,
+               amulet, orb]
+  creative_tab: [magic, spell, occult, arcane]

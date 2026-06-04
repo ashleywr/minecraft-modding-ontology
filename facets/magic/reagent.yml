@@ -1,0 +1,10 @@
+label: Magic Reagent
+description: >
+  An ingredient used in magical crafting, alchemy, or ritual recipes:
+  runes, essences, mob-drop reagents, and similar materials.
+
+matches:
+  path_words: [rune, runes, essence, pearl, membrane, wart, stardust]
+
+except_when:
+  path_words: [runewood]

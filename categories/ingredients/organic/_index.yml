@@ -1,0 +1,9 @@
+label: Organic Materials
+description: >
+  Biological crafting materials: feathers, bones, leather, wool,
+  honeycomb, and similar mob drops.
+
+show_if_any:
+  - ingredients/organic
+
+priority: normal

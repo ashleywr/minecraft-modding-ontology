@@ -1,0 +1,10 @@
+label: Placeable Food
+description: >
+  A food item that can also be placed as a decorative block: cakes, pies,
+  and similar display foods.
+
+matches:
+  path_words: [cake, pie, tart, pudding]
+
+requires:
+  has_facet: [building/placeable]

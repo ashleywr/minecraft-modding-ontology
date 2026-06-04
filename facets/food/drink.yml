@@ -1,0 +1,10 @@
+label: Drink
+description: >
+  A drinkable beverage item: juices, beers, teas, coffees, and other
+  non-potion consumable liquids.
+
+matches:
+  path_words: [juice, soda, beer, wine, coffee, tea, cider, drink, smoothie, milkshake]
+
+except_when:
+  has_facet: [magic/potion]

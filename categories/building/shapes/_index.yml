@@ -1,0 +1,11 @@
+label: Shapes
+description: Stairs, slabs, walls, fences, panes, and other shaped block variants.
+
+show_if_any:
+  - building/stairs
+  - building/slab
+  - building/wall
+  - building/fence
+  - building/pane
+
+priority: high

@@ -1,0 +1,7 @@
+label: Chest Armor
+description: >
+  A chestplate or chest-slot armor piece.
+
+matches:
+  path_words: [chestplate, chestplates, tunic, vest, jacket, coat]
+  tags: [c:armors/chestplate, forge:armors/chestplate]
