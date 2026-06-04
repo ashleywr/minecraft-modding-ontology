@@ -2,4 +2,4 @@
 
 | GitHub username | Role |
 |-----------------|------|
-| @sanhiruzu | Founder |
+| @ashleywr | Founder |
