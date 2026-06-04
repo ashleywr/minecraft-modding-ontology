@@ -30,8 +30,8 @@ except_when:
 ```
 
 The `matches` section lists signals that identify an item as having this facet. If *any*
-signal matches, the facet is assigned. The `except_when` section overrides — if any of
-those signals match, the facet is not assigned regardless of `matches`.
+signal matches, the facet is assigned. The `except_when` section overrides matches. If
+any of those signals match, the facet is not assigned regardless of what `matches` found.
 
 ### Category index files (`categories/**/_index.yml`)
 
@@ -63,16 +63,16 @@ hints to tools which subcategory should win when an item qualifies for multiple.
 
 **Fix:** The item is probably missing a facet, or has the wrong one.
 
-1. Find the correct facet file by browsing `facets/` — e.g., `facets/transport/rail.yml`
+1. Find the correct facet file by browsing `facets/` (e.g., `facets/transport/rail.yml`)
 2. Look at the `matches:` section
-3. Check your item's registry ID (e.g., `traincraft:iron_rail`) — does any word in the
+3. Check your item's registry ID (e.g., `traincraft:iron_rail`). Does any word in the
    path appear in `path_words`? Does the item have any of the listed tags?
 4. If not, add the missing word or tag to the appropriate list
 5. Leave a comment (lines starting with `#`) explaining why if it isn't obvious
 6. Open a pull request
 
-**Tip:** If you're not sure which facet file is relevant, open an issue instead and
-describe the problem — a maintainer will point you in the right direction.
+**Tip:** If you're not sure which facet file is relevant, open an issue and describe the
+problem. A maintainer will point you in the right direction.
 
 ---
 
@@ -112,7 +112,7 @@ Translation files sit alongside the originals with a locale code inserted before
 | Japanese | `ja` | `seed.ja.yml` |
 
 Translation files contain **only** `label` and `description`. Do not copy detection
-rules — they are language-independent and ignored in translation files.
+rules; they are language-independent and ignored in translation files.
 
 ```yaml
 # facets/natural/seed.de.yml
@@ -122,7 +122,7 @@ description: >
 ```
 
 You can translate any file in `facets/` or `categories/`. Translate as many or as few
-as you like — partial translations are welcome. Missing translations always fall back to
+as you like. Partial translations are welcome. Missing translations always fall back to
 English automatically.
 
 ---
@@ -134,7 +134,7 @@ If items exist that genuinely cannot be described by any current facet, open a
 
 Include:
 - What property you're trying to capture
-- 3–5 example items that should have this facet
+- 3 to 5 example items that should have this facet
 - Whether any existing facet is close but not quite right
 
 If the discussion confirms the facet is needed, either you or a maintainer will create
@@ -144,7 +144,7 @@ the facet file in the appropriate `facets/` subfolder.
 
 ### 5. Propose a new subcategory or category
 
-Open a Discussion in the **Taxonomy** category rather than an issue directly — these
+Open a Discussion in the **Taxonomy** category rather than an issue directly. These
 decisions affect many items and need broader input before becoming PRs.
 
 Good discussion prompts:
@@ -163,7 +163,7 @@ Large, diverse mods can earn a dedicated top-level category in `mod-categories/`
 [GOVERNANCE.md](GOVERNANCE.md#mod-specific-categories) for the qualification criteria.
 
 Open a [Mod Category nomination](.github/ISSUE_TEMPLATE/new-mod-category.yml) rather
-than a Discussion — nominations have a standard format for evaluating the criteria.
+than a Discussion. Nominations use a standard format for evaluating the criteria.
 
 ---
 
@@ -182,7 +182,7 @@ than a Discussion — nominations have a standard format for evaluating the crit
 
 | Prefix | Meaning |
 |--------|---------|
-| `minecraft:` | Vanilla — all loaders |
+| `minecraft:` | Vanilla, works on all loaders |
 | `c:` | Cross-loader (Fabric + NeoForge unified) |
 | `forge:` | NeoForge / legacy Forge only |
 | `fabric:` | Fabric only |
@@ -207,28 +207,28 @@ matches:
     path_words: [oil, press]
 ```
 
-Use the simple form first. Reach for `any`/`all`/`not` only when you genuinely need it —
-complex logic is harder for reviewers to verify.
+Use the simple form first. Reach for `any`/`all`/`not` only when you genuinely need it.
+Complex logic is harder for reviewers to verify.
 
 ---
 
 ## Running validation locally
 
-If you want to check your changes before opening a PR:
+To check your changes before opening a PR:
 
 ```bash
 pip install pyyaml jsonschema
 python .github/scripts/validate.py
 ```
 
-CI runs the same script automatically on every PR. You'll see the results in the
-checks panel on your pull request.
+CI runs the same script automatically on every PR. Results appear in the checks panel
+on your pull request.
 
 ---
 
 ## Pull request guidelines
 
-- Keep PRs focused — one issue per PR is easier to review and revert if needed
-- If your change is non-obvious, add a `#` comment to the YAML explaining why
-- Reference the issue or discussion your PR addresses in the PR description
-- Translation-only PRs don't need issue references — just open them directly
+- Keep PRs focused. One issue per PR is easier to review and revert if needed.
+- If your change is non-obvious, add a `#` comment to the YAML explaining why.
+- Reference the issue or discussion your PR addresses in the PR description.
+- Translation-only PRs don't need issue references.

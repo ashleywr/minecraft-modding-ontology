@@ -13,7 +13,7 @@ human-readable text files.
 
 Every Minecraft item can be described by a set of **facets** — properties like *seed*,
 *machine*, *door*, or *melee weapon*. An item can have many facets at once: a wheat seed
-is both `seed` and `compostable` and `placeable`.
+is `seed`, `compostable`, and `placeable` simultaneously.
 
 The **categories** folder defines how facets map to the browsable tree that players see.
 The *Seeds & Saplings* subcategory shows anything with the `seed` facet. *Tech / Machines*
@@ -30,9 +30,8 @@ Category routing picks the best-matching subcategory
 machine facet  →  Tech / Machines  ✓
 ```
 
-This separation means the vocabulary of *what things are* (`facets/`) and the
-organization of *how they're browsed* (`categories/`) can evolve independently, and
-contributors can work on one without touching the other.
+Because facets and categories are separate folders, contributors can work on detection
+rules without touching routing logic, and vice versa.
 
 ---
 
@@ -46,9 +45,9 @@ schema/           Validation rules that CI checks on every pull request
 ```
 
 Within `facets/` and `categories/`, the directory structure mirrors the ontology itself.
-The path `facets/natural/seed.yml` tells you the facet ID is `natural/seed`, and it lives
-conceptually in the *natural things* area of the vocabulary. You can browse the folder
-tree on GitHub and understand the structure without reading any documentation.
+The path `facets/natural/seed.yml` tells you the facet ID is `natural/seed`. You can
+browse the folder tree on GitHub and understand the structure without reading any
+documentation.
 
 ---
 
@@ -57,9 +56,9 @@ tree on GitHub and understand the structure without reading any documentation.
 ### An item from my mod lands in the wrong place
 
 [Open a Misclassification issue](.github/ISSUE_TEMPLATE/misclassified-items.yml) and
-describe the item and where it should go. If you want to fix it yourself:
+describe the item and where it should go. To fix it yourself:
 
-1. Find the facet that should apply — browse `facets/` until you find the right one
+1. Browse `facets/` to find the facet that should apply
 2. Open the `.yml` file and check the `matches:` section
 3. If your mod's tags or item name words are missing, add them
 4. Open a pull request
@@ -76,8 +75,9 @@ facets/natural/seed.zh_cn.yml  ← Simplified Chinese
 facets/natural/seed.pt_br.yml  ← Brazilian Portuguese
 ```
 
-Translation files contain only `label` and `description` — no detection rules. Open a
-pull request. Missing translations always fall back to English automatically.
+Translation files contain only `label` and `description`. Detection rules live only in
+the canonical file and are not translated. Open a pull request. Missing translations
+fall back to English automatically.
 
 ### I think a new facet is needed
 
@@ -86,7 +86,7 @@ property you want to capture, with examples of items that would have it.
 
 ### I want to debate the taxonomy
 
-[Start a Discussion](../../discussions) — questions about where things belong, proposals
+[Start a Discussion](../../discussions). Questions about where things belong, proposals
 for new categories, "should X and Y be the same facet?" debates, and structural ideas
 all live there. Discussions that reach a clear conclusion get converted into issues and
 then pull requests.
@@ -119,11 +119,11 @@ except_when:
   # "seed pouch" and "oil-seed press" are not seeds
 ```
 
-The file path is the facet's ID: `facets/natural/seed.yml` → `natural/seed`.
+The file path is the facet's ID: `facets/natural/seed.yml` becomes `natural/seed`.
 
-**`matches`** — the item has at least one of these properties  
-**`requires`** — the item must also have all of these (additional constraints)  
-**`except_when`** — excluded if any of these match (overrides `matches`)
+**`matches`**: the item has at least one of these properties  
+**`requires`**: the item must also satisfy all of these (additional constraints)  
+**`except_when`**: if any of these match, the facet is not assigned
 
 Available match types: `tags`, `block_tags`, `path_words`, `components`,
 `creative_tab`, `has_facet`. See [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
@@ -147,7 +147,7 @@ priority: high
 ```
 
 The `show_if_any` list references facet IDs by path. `priority` is a hint for tools
-when an item could route to multiple subcategories — `high` subcategories are preferred.
+when an item qualifies for multiple subcategories; a `high` subcategory takes precedence.
 
 ---
 
@@ -156,11 +156,11 @@ when an item could route to multiple subcategories — `high` subcategories are 
 The ontology is published as a versioned release on this repository. Each release tag
 follows semantic versioning:
 
-- **Patch** (1.0.x) — new entries, new tokens, new tags. Safe to update without code changes.
-- **Minor** (1.x.0) — new facets or subcategories. May require new display strings.
-- **Major** (x.0.0) — renamed or removed facets, schema format changes.
+- **Patch** (1.0.x): new entries, new tokens, new tags. Safe to update without code changes.
+- **Minor** (1.x.0): new facets or subcategories. May require new display strings.
+- **Major** (x.0.0): renamed or removed facets, schema format changes.
 
-Facet IDs are derived from file paths: `facets/natural/seed.yml` → `natural/seed`.
+Facet IDs are derived from file paths: `facets/natural/seed.yml` becomes `natural/seed`.
 Translation files are excluded from IDs.
 
 See [CHANGELOG.md](CHANGELOG.md) for a full history of changes between versions.
@@ -169,5 +169,5 @@ See [CHANGELOG.md](CHANGELOG.md) for a full history of changes between versions.
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain dedication. No attribution required.
+[CC0 1.0 Universal](LICENSE). Public domain. No attribution required.
 Usable in commercial mods and tools without restriction.
