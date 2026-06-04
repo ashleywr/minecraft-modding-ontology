@@ -1,0 +1,85 @@
+name: Mod category nomination
+description: Nominate a mod for its own dedicated top-level category.
+title: "[Mod Category] ModName"
+labels: ["mod-category-nomination"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dedicated mod categories are for mods large and diverse enough that scattering
+        their items across generic categories makes them hard to browse. See
+        [GOVERNANCE.md](../GOVERNANCE.md#mod-specific-categories) for the full criteria.
+
+  - type: input
+    id: mod_name
+    attributes:
+      label: Mod name
+      placeholder: Create
+    validations:
+      required: true
+
+  - type: input
+    id: mod_id
+    attributes:
+      label: Mod ID
+      description: The registry namespace (e.g. `create`, `botania`).
+      placeholder: create
+    validations:
+      required: true
+
+  - type: input
+    id: item_count
+    attributes:
+      label: Approximate item count
+      description: Unique, distinct items. Color/material variants of the same item type count as one.
+      placeholder: "~420"
+    validations:
+      required: true
+
+  - type: textarea
+    id: spread
+    attributes:
+      label: Subcategory spread
+      description: |
+        Which generic subcategories would the mod's items currently land across?
+        List them and give one or two example items for each.
+      placeholder: |
+        Tech / Machines — create:mechanical_mixer, create:deployer
+        Tech / Transport — create:track, create:steam_locomotive
+        Tech / Parts — create:cogwheel, create:shaft
+        Building / Functional — create:door, create:trapdoor
+        Ingredients / Mineral — create:zinc_ingot, create:brass_ingot
+    validations:
+      required: true
+
+  - type: input
+    id: modrinth
+    attributes:
+      label: Modrinth downloads (approximate)
+      placeholder: "48,000,000"
+
+  - type: input
+    id: curseforge
+    attributes:
+      label: CurseForge downloads (approximate)
+      placeholder: "120,000,000"
+
+  - type: input
+    id: modrinth_url
+    attributes:
+      label: Modrinth page URL
+      placeholder: https://modrinth.com/mod/create
+
+  - type: textarea
+    id: subcategory_proposal
+    attributes:
+      label: Proposed subcategory structure
+      description: |
+        Optional. If you have a sense of how the mod's items should be grouped within
+        its own category, sketch it out here. Reviewers may adjust this.
+      placeholder: |
+        kinetics/    — shafts, gearboxes, bearings, pulleys
+        machines/    — mechanical arms, deployers, mixers, presses
+        logistics/   — belts, funnels, vaults, chutes
+        trains/      — tracks, bogeys, locomotives, carriages
+        materials/   — zinc, brass, andesite alloy

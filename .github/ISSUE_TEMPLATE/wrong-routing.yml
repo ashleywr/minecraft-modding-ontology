@@ -1,0 +1,35 @@
+name: Wrong routing rule
+description: Items are getting the right facets but landing in the wrong subcategory.
+title: "[Routing] brief description"
+labels: ["wrong-routing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this if facet assignment looks correct but the category tree puts items in the
+        wrong place. If you're not sure whether it's a facet problem or a routing problem,
+        use the Misclassification template instead.
+
+  - type: textarea
+    id: items
+    attributes:
+      label: Affected items
+      description: Item IDs and where they currently appear vs. where they should go.
+      placeholder: |
+        create:mechanical_bearing  —  appears in Tech / Parts, should be in Tech / Machines
+    validations:
+      required: true
+
+  - type: textarea
+    id: facets
+    attributes:
+      label: What facets do these items have?
+      description: If you know. You can find this by checking which facet files they match.
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is the current routing wrong?
+      description: Explain what the correct subcategory should be and why.
+    validations:
+      required: true

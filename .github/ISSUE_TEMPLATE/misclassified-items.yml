@@ -1,0 +1,43 @@
+name: Misclassified items
+description: Items from a mod are landing in the wrong category or subcategory.
+title: "[Misclassification] ModName: brief description"
+labels: ["misclassification"]
+body:
+  - type: input
+    id: mod_id
+    attributes:
+      label: Mod ID
+      description: The mod's registry namespace, as it appears in item IDs (e.g. `create`, `botania`, `farmersdelight`).
+      placeholder: create
+    validations:
+      required: true
+
+  - type: textarea
+    id: items
+    attributes:
+      label: Affected items
+      description: |
+        List the item IDs and where they currently appear vs. where they should go.
+        You don't need to list every item — a few clear examples are enough.
+      placeholder: |
+        create:mechanical_mixer  —  appears in Building, should be in Tech / Machines
+        create:fluid_pipe        —  appears in Tech / Machines, should be in Tech / Cables
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should they go there?
+      description: Optional. Helps reviewers evaluate quickly and write a good fix.
+      placeholder: |
+        Mechanical mixers are processing machines, not building blocks.
+        Fluid pipes are logistics blocks — they move things, they don't process them.
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags the items have (if you know)
+      description: Optional. Paste the item's tag list if you have access to it — speeds up the fix considerably.
+      placeholder: |
+        create:mechanical_mixer has tags: c:machines, create:kinetics

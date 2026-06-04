@@ -1,0 +1,56 @@
+name: New facet proposal
+description: A property exists that no current facet captures.
+title: "[New Facet] proposed name"
+labels: ["new-facet"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New facets go through a Discussion before a PR, unless the case is very clear-cut.
+        If you're unsure, open a Discussion in the **Taxonomy** category instead.
+
+  - type: input
+    id: proposed_id
+    attributes:
+      label: Proposed facet ID
+      description: Lowercase, underscores only. Where in `facets/` would it live? (e.g. `tech/circuit`, `natural/aquatic`)
+      placeholder: tech/circuit
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What property does this facet capture?
+      description: Describe what an item having this facet means. When should it be assigned?
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example items
+      description: List 3 to 5 item IDs that should have this facet.
+      placeholder: |
+        ae2:logic_processor
+        mekanism:basic_control_circuit
+        gtceu:basic_integrated_circuit
+    validations:
+      required: true
+
+  - type: textarea
+    id: existing
+    attributes:
+      label: Is there an existing facet that is close but not quite right?
+      description: If so, explain what's missing or wrong about it.
+
+  - type: textarea
+    id: detection
+    attributes:
+      label: How would detection work?
+      description: |
+        Optional. If you know the tags or path words that identify these items, list them.
+        A reviewer will write the final YAML, but this helps.
+      placeholder: |
+        Tags: c:circuits, forge:circuits, mekanism:circuits
+        Path words: circuit, circuits, processor, chip

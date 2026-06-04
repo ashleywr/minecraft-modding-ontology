@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "facet.schema.json",
+  "title": "Facet",
+  "description": "A facet defines a detectable property that can be stamped onto Minecraft items.",
+  "type": "object",
+  "required": ["label"],
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Human-readable name for this facet.",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Explanation of what this facet means and when it applies."
+    },
+    "matches": {
+      "$ref": "#/$defs/matchBlock",
+      "description": "The item satisfies at least one of these signals."
+    },
+    "requires": {
+      "$ref": "#/$defs/matchBlock",
+      "description": "Additional signals that must ALL be satisfied (AND with matches)."
+    },
+    "except_when": {
+      "$ref": "#/$defs/matchBlock",
+      "description": "If any of these signals match, the facet is not assigned regardless of matches."
+    }
+  },
+  "$defs": {
+    "matchBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A set of signals. In the simple form, all listed signals are OR'd together within each key.",
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Item tags (e.g. c:seeds, forge:ingots, minecraft:saplings)."
+        },
+        "block_tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Block tags for the placed form of the item."
+        },
+        "path_words": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9]+$" },
+          "description": "Words that appear in the item's registry path when split on non-alphanumeric characters."
+        },
+        "components": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Data component IDs the item must have (e.g. minecraft:food)."
+        },
+        "creative_tab": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Words that appear in the item's creative tab ID or label."
+        },
+        "has_facet": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z_]+/[a-z_]+$" },
+          "description": "Other facets that must already be assigned. Use path-style IDs (e.g. natural/seed)."
+        },
+        "any": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/matchBlock" },
+          "description": "Explicit OR — at least one child block must match."
+        },
+        "all": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/matchBlock" },
+          "description": "Explicit AND — all child blocks must match."
+        },
+        "not": {
+          "$ref": "#/$defs/matchBlock",
+          "description": "Explicit NOT — the child block must not match."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mod-category-index.schema.json",
+  "title": "Mod-Specific Category Index",
+  "description": "Top-level _index.yml for a dedicated mod category. Subcategory _index.yml files use category-index.schema.json.",
+  "type": "object",
+  "required": ["label", "mod_id", "qualified_by"],
+  "additionalProperties": false,
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Human-readable mod name.",
+      "minLength": 1
+    },
+    "mod_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "The mod's registry namespace / mod ID."
+    },
+    "icon": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+:[a-z0-9_/]+$",
+      "description": "Non-binding icon hint. Typically an item from the mod itself."
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the mod and what its category covers."
+    },
+    "qualified_by": {
+      "type": "object",
+      "required": ["item_count", "subcategory_spread", "discussion", "added"],
+      "additionalProperties": false,
+      "description": "Evidence that this mod met the qualification criteria at the time it was added.",
+      "properties": {
+        "item_count": {
+          "type": "string",
+          "description": "Approximate number of unique, distinct items (not variants). Use ~ prefix for estimates."
+        },
+        "subcategory_spread": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of generic subcategories the mod's items would span."
+        },
+        "modrinth_downloads": {
+          "type": "integer",
+          "description": "Modrinth download count at time of nomination."
+        },
+        "curseforge_downloads": {
+          "type": "integer",
+          "description": "CurseForge download count at time of nomination."
+        },
+        "discussion": {
+          "type": "string",
+          "description": "URL of the nomination Discussion thread."
+        },
+        "added": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "ISO date when this category was added (YYYY-MM-DD)."
+        }
+      }
+    },
+    "deprecated": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Present only if this mod category is deprecated.",
+      "properties": {
+        "reason": { "type": "string" },
+        "successor_mod_id": { "type": "string" },
+        "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+      }
+    }
+  }
+}
