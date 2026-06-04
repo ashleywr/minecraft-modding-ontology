@@ -1,18 +1,18 @@
 # Minecraft Modding Ontology
 
-A community-maintained vocabulary for classifying Minecraft modded items. Used by item
+A community-maintained vocabulary for classifying Minecraft modded items. Ideally to be able to be used by item
 search overlays, recipe viewers, sorting mods, and server tools to consistently organize
-the thousands of items that modpacks contain.
+the thousands of items that modpacks can contain.
 
-No programming knowledge required to contribute. Most contributions are small edits to
+No programming knowledge required to contribute. Most contributions are likely to be small edits to
 human-readable text files.
 
 ---
 
 ## How it works
 
-Every Minecraft item can be described by a set of **facets** — properties like *seed*,
-*machine*, *door*, or *melee weapon*. An item can have many facets at once: a wheat seed
+Every Minecraft item can be described by a set of **facets**, properties like *seed*,
+*machine*, *door*, or *melee weapon*. An item can have many facets at once. A wheat seed
 is `seed`, `compostable`, and `placeable` simultaneously.
 
 The **categories** folder defines how facets map to the browsable tree that players see.
@@ -38,13 +38,13 @@ rules without touching routing logic, and vice versa.
 ## Repository layout
 
 ```
-facets/           What things ARE — detection rules using tags, path words, data components
-categories/       Where things APPEAR — routing rules that reference facets
+facets/           What things ARE. Detection rules using tags, path words, data components
+categories/       Where things APPEAR. Routing rules that reference facets
 mod-categories/   Dedicated groupings for large, diverse mods (Create, Cobblemon, etc.)
 schema/           Validation rules that CI checks on every pull request
 ```
 
-Within `facets/` and `categories/`, the directory structure mirrors the ontology itself.
+Within `facets/` and `categories/` the directory structure mirrors the ontology itself.
 The path `facets/natural/seed.yml` tells you the facet ID is `natural/seed`. You can
 browse the folder tree on GitHub and understand the structure without reading any
 documentation.
@@ -78,6 +78,8 @@ facets/natural/seed.pt_br.yml  ← Brazilian Portuguese
 Translation files contain only `label` and `description`. Detection rules live only in
 the canonical file and are not translated. Open a pull request. Missing translations
 fall back to English automatically.
+
+To add translations across the entire ontology at once, which is likely needed at first, will take some minor tooling that will ideally come in the near future, or please add it yourself!
 
 ### I think a new facet is needed
 
